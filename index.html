@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <img src="https://www.bracu.ac.bd/sites/all/themes/sloth/images/f-logo.svg" alt="BRAC University Logo" class="brac-logo">
+            <nav>
+                <ul>
+                    <li><a href="#personal-information">Personal Information</a></li>
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#technical-skills">Technical Skills</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <br><span>Md. Shahariar Shopnil</span><br><span class="subtitle">Aspiring Computer Science Engineer</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Personal Info  -->
+    <section id="personal-information" class="section">
+        <div class="container">
+            <h2>Personal Information</h2>
+            <p> I am currently pursuing my undergraduate degree in Computer Science and Engineering at <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a>. I enjoy coding, solving problems, and learning new technologies.
+                Proficient in HTML, CSS, JavaScript, React, MongoDB, and Node.js.
+                Passionate about continuous learning, engaged in AI and Machine Learning research and also have a keen interest in Cyber Security.</p>
+            
+        </div>
+    </section>
+
+    <!-- About Me  -->
+    <section id="about-me" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="tab-titles"> 
+                <p class="tab-links active-link" onclick="opentab('Hobbies')">Hobbies</p>
+                <p class="tab-links" onclick="opentab('Sports')">Sports</p>
+                <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('ExtracurricularActivities')">Extracurricular Activities</p>
+                <p class="tab-links" onclick="opentab('Interest')">Interest</p>
+                <p class="tab-links" onclick="opentab('Suggestion')">Suggestion</p>
+
+            </div>
+            <div class="tab-contents active-tab" id="Hobbies">
+                <ul>
+                    <li>Cooking</li>
+                    <li>Painting</li>
+                    <li>Watching Movies</li>
+                    <li>Listening to Music</li>
+                    <li>Spending time with friends</li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="Sports">
+                <ul>
+                    <li>Football<br>Player of the Tournament<br><a href="https://drive.google.com/file/d/1jqpKK5O_OuWzhQa79dILuEDlGDxiZ080/view?usp=sharing" target="_blank">Inter House Football Tournament-MSSC</a></li>
+                    <li>Cricket</li>
+                    <li>Badminton</li>
+                    <li>Basketball</li>
+                    <li>Vollyball</li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="Skills">
+                <ul>
+                    <li>Leadership</li>
+                    <li>Communication skills</li>
+                    <li>Presentation skills</li>
+                    <li>Team building</li>
+                    <li>Multitasking</li>
+                    <li>Adaptability</li>
+                    <li>Thinking outside the box</li>
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="ExtracurricularActivities">
+                <ul>
+                    <li>Debating<br>Best Debater Award(MSSC)</li>
+                    <li>Student government<br>Leadership, communication, and organization skills (BRACU CLUBS)</li>
+                    <li>Foreign languages<br>English,French,Hindi,Japanese</li>
+        
+
+                </ul>
+            </div>
+            <div class="tab-contents" id="Interest">
+                <p>I am very fond of watching Movies, I am attaching the list of my top 10 favorite movies.</p>
+                <ol>
+                    <li>The Shawshank Redemption</li>
+                    <li>The Godfather</li>
+                    <li>The Dark Knight</li>
+                    <li>The Godfather Part II</li>
+                    <li>The Lord of the Rings (Trilogy)</li>
+                    <li>Fight Club</li>
+                    <li>Inception</li>
+                    <li>The Matrix</li>
+                    <li>Interstellar</li>
+                    <li>The Pianist</li>
+
+
+                </ol>
+            </div>
+            <div class="tab-contents" id="Suggestion">
+                <a href="https://youtu.be/9K30e9O3Nng?si=3Hv19H-WyF6k3zMp" target="_blank">
+                    "Hope is a good thing, maybe the best of things,and no good thing ever dies." - Andy Dufresne
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2>Education</h2>
+            <table>
+                <tr>
+                    <th>Degree</th>
+                    <th>Institution</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>BSc in Computer Science and Engineering</td>
+                    <td>BRAC University</td>
+                    <td>2022 - Present</td>
+                </tr>
+                <tr>
+                    <td>Higher Secondary Certificate</td>
+                    <td>Millennium Scholastic School and College</td>
+                    <td>2018 - 2020</td>
+                </tr>
+                <tr>
+                    <td>Secondary School Certificate</td>
+                    <td>Millennium Scholastic School and College</td>
+                    <td>2016 - 2018</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="technical-skills" class="section">
+        <div class="container">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>Languages: Python, JavaScript, PHP, CSS</li>
+                <li>Frameworks: React.js, Express, Node.js</li>
+                <li>Libraries: Material-UI, Redux, React Router</li>
+                <li>Databases: SQL, MongoDB</li>
+                <li>Dev Tools: Visual Studio Code, Git</li>
+                <li>Project Management: Jira, Trello, Excel</li>
+                <li>Productivity Tools: MS Office, Google Workplace</li>
+                <li>Operating Systems: Windows, Linux, MacOS</li>
+            </ul>
+
+        </div>
+    </section>
+
+<!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Md. Shahariar Shopnil. All rights reserved.</p>
+            <p>This is a project of <strong>CSE391</strong>.</p>
+            <p>Join our Discord community: <a href="https://discord.gg/egDGpMA3" target="_blank">Discord Link</a></p>
+            <p> Connect on Facebook: <a href="https://www.facebook.com/shahariar.shopnil.143/" target="_blank">Facebook Link</a></p>
+        </div>
+    </footer>
+    
+    <!-- Bottom Section -->
+    <div id="bottom-info">
+    </div>
+
+
+    <!-- JavaScript  -->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        // Function to display location and last modified date
+        function displayBottomInfo() {
+            // Get the div where the info will be displayed
+            const bottomInfo = document.getElementById('bottom-info');
+    
+            // Get the current page's URL (location)
+            const pageLocation = window.location.href;
+    
+            // Get the last modified date of the page
+            const lastModified = new Date(document.lastModified).toLocaleDateString();
+    
+            // Create the HTML content
+            const content = `
+                <p>Location: ${pageLocation}</p>
+                <p>Last Modified: ${lastModified}</p>
+            `;
+    
+            // Insert the content into the div
+            bottomInfo.innerHTML = content;
+        }
+    
+        // Call the function when the page loads
+        window.onload = displayBottomInfo;
+    </script>
+
+
+</body>
+</html>
