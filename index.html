@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Md. Shahariar Shopnil | Personal Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header id="navbar">
+        <div class="nav-container">
+            
+            
+            <div class="logo">
+                <a href="#header">MSS<span>.</span></a>
+            </div>
+
+            <nav>
+                <ul id="nav-menu">
+                    <li><a href="#personal-information" class="nav-link"><i class="fa-solid fa-user"></i> Profile</a>
+                    </li>
+                    <li><a href="#about-me" class="nav-link"><i class="fa-solid fa-address-card"></i> About</a></li>
+                    <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a>
+                    </li>
+                    <li><a href="#technical-skills" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Skills</a>
+                    </li>
+                    <li><a href="#projects" class="nav-link"><i class="fa-solid fa-diagram-project"></i> Projects</a>
+                    </li>
+                    <li><a href="#research" class="nav-link"><i class="fa-solid fa-book-bookmark"></i> Research</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
+                </ul>
+                <div class="menu-toggle" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+<!-- Hero Section -->
+    <section id="header">
+        <canvas id="hero-canvas"></canvas>
+        <div class="container hero-container">
+            <div class="header-text">
+                <h1>Hi, I'm <span>Md. Shahariar Shopnil</span></h1>
+                <p class="subtitle"><i class="fa-solid fa-gears"></i> Aspiring Computer Science Engineer &amp; Tech
+                    Strategist</p>
+                <p class="summary-text">
+                    A passionate Computer Science student with a minor in Business Administration, aiming to bridge
+                    technology and strategic innovation. With experience in web development, AI, and cybersecurity, I
+                    strive to create intelligent, efficient, and impactful digital solutions that deliver real-world
+                    value.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary"><i class="fa-solid fa-paper-plane"></i> Get In Touch</a>
+                    <a href="#projects" class="btn btn-secondary"><i class="fa-solid fa-eye"></i> View Projects</a>
+                </div>
+                <div class="social-links-hero">
+                    <a href="https://www.linkedin.com/in/shahariar-shopnil-620444222/" target="_blank"
+                        title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://github.com/shahariarshopnil" target="_blank" title="GitHub"><i
+                            class="fa-brands fa-github"></i></a>
+                    <a href="mailto:md.shahariar.shopnil@g.bracu.ac.bd" title="Email"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+8801306625211" title="Phone"><i class="fa-solid fa-phone"></i></a>
+                    <a href="https://www.facebook.com/shahariar.shopnil.143/" target="_blank" title="Facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="hero-image-col">
+                <img src="images/bg.png" alt="Md. Shahariar Shopnil" class="hero-portrait" />
+            </div>
+        </div>
+
+        <!-- Animated Scroll Down Indicator -->
+        <div class="scroll-indicator">
+            <a href="#personal-information" aria-label="Scroll to profile">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Personal Info Card -->
+    <section id="personal-information" class="section">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Personal Information</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fa-solid fa-graduation-cap card-icon"></i>
+                    <h3>Affiliation</h3>
+                    <p>Undergraduate Student in Computer Science and Engineering (Major) with a minor in Business
+                        Administration at <a href="https://www.bracu.ac.bd/" target="_blank">BRAC University</a>.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-heart-pulse card-icon"></i>
+                    <h3>Research &amp; Security</h3>
+                    <p>Passionate about continuous learning, engaged in AI and Machine Learning research, and holding a
+                        keen interest in Cyber Security.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fa-solid fa-code card-icon"></i>
+                    <h3>Core Development</h3>
+                    <p>Proficient in building modern full-stack web applications using HTML, CSS, JavaScript, React,
+                        Node.js, Express, and MongoDB.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Tabs -->
+    <section id="about-me" class="section">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="about-tabs-wrapper">
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Leadership')"><i
+                            class="fa-solid fa-people-roof"></i> Leadership &amp; Activities</p>
+                    <p class="tab-links" onclick="opentab('Skills')"><i class="fa-solid fa-puzzle-piece"></i>
+                        Professional Skills</p>
+                    <p class="tab-links" onclick="opentab('Languages')"><i class="fa-solid fa-language"></i> Languages
+                    </p>
+                    <p class="tab-links" onclick="opentab('Hobbies')"><i class="fa-solid fa-gamepad"></i> Hobbies &amp;
+                        Interests</p>
+                    <p class="tab-links" onclick="opentab('Interest')"><i class="fa-solid fa-film"></i> Movies &amp;
+                        Quotes</p>
+                </div>
+
+                <!-- Leadership & Extracurricular Activities Tab -->
+                <div class="tab-contents active-tab" id="Leadership">
+                    <div class="about-card">
+                        <div class="about-sub-item">
+                            <div class="about-sub-header">
+                                <h4><i class="fa-solid fa-calendar-check text-cyan"></i> Event Management</h4>
+                                <span class="badge">College &amp; BRAC University Clubs</span>
+                            </div>
+                            <ul class="bullet-list">
+                                <li>Planned and executed academic and cultural events in collaboration with
+                                    cross-functional teams.</li>
+                                <li>Managed logistics, scheduling, and on-site coordination under strict deadlines.</li>
+                                <li>Contributed creative ideas to enhance participant engagement and overall event
+                                    efficiency.</li>
+                            </ul>
+                        </div>
+                        <div class="about-sub-item">
+                            <div class="about-sub-header">
+                                <h4><i class="fa-solid fa-comments text-cyan"></i> Competitive Debating</h4>
+                                <span class="badge badge-gold"><i class="fa-solid fa-award"></i> Best Debater Award
+                                    (MSSC)</span>
+                            </div>
+                            <ul class="bullet-list">
+                                <li>Winner of the Best Debater Award at an Inter-College Debate Competition.</li>
+                                <li>Demonstrated strong communication, critical thinking, and persuasive argumentation
+                                    skills.</li>
+                            </ul>
+                        </div>
+                        <div class="about-sub-item">
+                            <div class="about-sub-header">
+                                <h4><i class="fa-solid fa-circle-play text-cyan"></i> Inter-College Football Tournament
+                                </h4>
+                                <span class="badge badge-gold"><i class="fa-solid fa-trophy"></i> Captain &amp; Man of
+                                    the Tournament</span>
+                            </div>
+                            <ul class="bullet-list">
+                                <li>Awarded Man of the Tournament and led the team as Captain.</li>
+                                <li>Exhibited leadership, teamwork, resilience, and the ability to perform under
+                                    pressure.</li>
+                                <li>View certificate/proof: <a
+                                        href="https://drive.google.com/file/d/1jqpKK5O_OuWzhQa79dILuEDlGDxiZ080/view?usp=sharing"
+                                        target="_blank" class="text-link">Inter House Football Tournament-MSSC</a>.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills (Soft Skills) Tab -->
+                <div class="tab-contents" id="Skills">
+                    <div class="about-card">
+                        <p class="tab-intro-text">Key interpersonal and professional qualities compiled from experiences
+                            in leadership and collaborative spaces:</p>
+                        <div class="skills-tag-container">
+                            <span class="skill-tag"><i class="fa-solid fa-handshake"></i> Leadership</span>
+                            <span class="skill-tag"><i class="fa-solid fa-circle-nodes"></i> Communication skills</span>
+                            <span class="skill-tag"><i class="fa-solid fa-chalkboard-user"></i> Presentation
+                                skills</span>
+                            <span class="skill-tag"><i class="fa-solid fa-users-gear"></i> Team building</span>
+                            <span class="skill-tag"><i class="fa-solid fa-layer-group"></i> Multitasking</span>
+                            <span class="skill-tag"><i class="fa-solid fa-shield-halved"></i> Adaptability</span>
+                            <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> Thinking outside the
+                                box</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages Tab -->
+                <div class="tab-contents" id="Languages">
+                    <div class="about-card">
+                        <div class="languages-grid">
+                            <div class="lang-item">
+                                <div class="lang-title">Bangla</div>
+                                <div class="lang-bar">
+                                    <div class="lang-fill fill-100"></div>
+                                </div>
+                                <span class="lang-level">Native Speaker</span>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-title">English</div>
+                                <div class="lang-bar">
+                                    <div class="lang-fill fill-90"></div>
+                                </div>
+                                <span class="lang-level">Fluent (Speaking and Writing)</span>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-title">French</div>
+                                <div class="lang-bar">
+                                    <div class="lang-fill fill-40"></div>
+                                </div>
+                                <span class="lang-level">Elementary / Conversational</span>
+                            </div>
+                            <div class="lang-item">
+                                <div class="lang-title">Hindi &amp; Japanese</div>
+                                <div class="lang-bar">
+                                    <div class="lang-fill fill-30"></div>
+                                </div>
+                                <span class="lang-level">Interests &amp; Basics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hobbies & Interests Tab -->
+                <div class="tab-contents" id="Hobbies">
+                    <div class="about-card">
+                        <div class="hobbies-split">
+                            <div class="split-block">
+                                <h4><i class="fa-solid fa-heart text-pink"></i> Hobbies</h4>
+                                <ul class="checklist-items">
+                                    <li><i class="fa-solid fa-circle-check text-cyan"></i> Culinary Arts &amp; Cooking
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check text-cyan"></i> Painting &amp; Sketching</li>
+                                    <li><i class="fa-solid fa-circle-check text-cyan"></i> Watching Movies</li>
+                                    <li><i class="fa-solid fa-circle-check text-cyan"></i> Listening to Music</li>
+                                    <li><i class="fa-solid fa-circle-check text-cyan"></i> Spending time with friends
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="split-block">
+                                <h4><i class="fa-solid fa-magnifying-glass text-indigo"></i> Academic Interests</h4>
+                                <ul class="checklist-items">
+                                    <li><i class="fa-solid fa-circle-check text-indigo"></i> Cybersecurity</li>
+                                    <li><i class="fa-solid fa-circle-check text-indigo"></i> Artificial Intelligence
+                                    </li>
+                                    <li><i class="fa-solid fa-circle-check text-indigo"></i> Machine Learning</li>
+                                    <li><i class="fa-solid fa-circle-check text-indigo"></i> Full-Stack Software
+                                        Engineering</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Movies & Quotes Tab -->
+                <div class="tab-contents" id="Interest">
+                    <div class="about-card">
+                        <div class="movies-container">
+                            <div class="movie-quote-box">
+                                <p class="quote-text">
+                                    <a href="https://youtu.be/9K30e9O3Nng?si=3Hv19H-WyF6k3zMp" target="_blank">
+                                        <i class="fa-solid fa-quote-left"></i> "Hope is a good thing, maybe the best of
+                                        things, and no good thing ever dies." <i class="fa-solid fa-quote-right"></i>
+                                    </a>
+                                </p>
+                                <span class="quote-author">— Andy Dufresne (The Shawshank Redemption)</span>
+                            </div>
+                            <p class="tab-intro-text"><i class="fa-solid fa-clapperboard"></i> My Top 10 Favorite
+                                Movies:</p>
+                            <ol class="movies-list">
+                                <li>The Shawshank Redemption</li>
+                                <li>The Godfather</li>
+                                <li>The Dark Knight</li>
+                                <li>The Godfather Part II</li>
+                                <li>The Lord of the Rings (Trilogy)</li>
+                                <li>Fight Club</li>
+                                <li>Inception</li>
+                                <li>The Matrix</li>
+                                <li>Interstellar</li>
+                                <li>The Pianist</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Timeline -->
+    <section id="education" class="section">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Education</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">May 2022 - Present</div>
+                    <div class="timeline-content">
+                        <h3>B.Sc. in Computer Science (Major)</h3>
+                        <span class="timeline-sub">Bachelor of Business Administration (Minor)</span>
+                        <p class="timeline-institution"><i class="fa-solid fa-university"></i> BRAC University, Merul
+                            Badda, Dhaka, Bangladesh</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2018 - 2020</div>
+                    <div class="timeline-content">
+                        <h3>Higher Secondary School Certificate (HSC)</h3>
+                        <span class="timeline-sub">English Version — GPA: 5.00 / 5.00</span>
+                        <p class="timeline-institution"><i class="fa-solid fa-school"></i> Millennium Scholastic School
+                            and College, Jahangirabad Cantonment, Bogura, Bangladesh</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2016 - 2018</div>
+                    <div class="timeline-content">
+                        <h3>Secondary School Certificate (SSC)</h3>
+                        <span class="timeline-sub">English Version — GPA: 5.00 / 5.00</span>
+                        <p class="timeline-institution"><i class="fa-solid fa-school"></i> Millennium Scholastic School
+                            and College, Jahangirabad Cantonment, Bogura, Bangladesh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills Grid -->
+    <section id="technical-skills" class="section">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Langs -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-terminal text-cyan"></i>
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="skills-list-grid">
+                        <span class="skill-item">C</span>
+                        <span class="skill-item">C++</span>
+                        <span class="skill-item">Python</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">PHP</span>
+                        <span class="skill-item">SQL</span>
+                        <span class="skill-item">HTML &amp; CSS</span>
+                    </div>
+                </div>
+
+                <!-- Frameworks -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-cubes text-cyan"></i>
+                        <h3>Frameworks &amp; APIs</h3>
+                    </div>
+                    <div class="skills-list-grid">
+                        <span class="skill-item">MERN Stack</span>
+                        <span class="skill-item">React.js</span>
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express.js</span>
+                        <span class="skill-item">OpenGL</span>
+                    </div>
+                </div>
+
+                <!-- Databases -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-database text-cyan"></i>
+                        <h3>Databases</h3>
+                    </div>
+                    <div class="skills-list-grid">
+                        <span class="skill-item">MySQL</span>
+                        <span class="skill-item">MongoDB</span>
+                    </div>
+                </div>
+
+                <!-- Dev Tools -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-screwdriver-wrench text-cyan"></i>
+                        <h3>Dev Tools</h3>
+                    </div>
+                    <div class="skills-list-grid">
+                        <span class="skill-item">Visual Studio Code</span>
+                        <span class="skill-item">Git</span>
+                    </div>
+                </div>
+
+                <!-- Operating Systems -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-desktop text-cyan"></i>
+                        <h3>Operating Systems</h3>
+                    </div>
+                    <div class="skills-list-grid">
+                        <span class="skill-item">Windows</span>
+                        <span class="skill-item">Linux</span>
+                        <span class="skill-item">MacOS</span>
+                    </div>
+                </div>
+
+                <!-- Productivity Tools -->
+                <div class="skills-category-card">
+                    <div class="category-header">
+                        <i class="fa-solid fa-briefcase text-cyan"></i>
+                        <h3>Productivity &amp; Tools</h3>
+                    </div>
+                    <div class="skills-list-grid">
+                        <span class="skill-item">MS Word</span>
+                        <span class="skill-item">Excel</span>
+                        <span class="skill-item">PowerPoint</span>
+                        <span class="skill-item">Google Workplace</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Projects Grid -->
+    <section id="projects" class="section">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="projects-grid">
+
+                <!-- Project 1: 3D Aviator Game -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">PyOpenGL</span>
+                            <span class="tech-tag">3D Simulation</span>
+                        </div>
+                        <h3>3D Aviator Game</h3>
+                        <p>A thrilling 3D flight simulation game built with Python and OpenGL. Features hardware-accelerated rendering, realistic flight physics, multiple camera perspectives, procedural obstacles, and an interactive combat system.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Dead-Done/3D-Aviator-Game" target="_blank"
+                                class="btn-project"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: TURF Booking System (NEW) -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">HTML &amp; CSS</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <h3>TURF Booking System</h3>
+                        <p>A sports turf reservation website where players can easily browse available playing schedules and book their preferred time slots. Built with responsive web technologies and backed by a MySQL database.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/shahariarshopnil/TURF-Booking-System.git" target="_blank"
+                                class="btn-project"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <h3>Railway E-ticket Management System</h3>
+                        <p>This platform enables users to book Bangladesh Railways tickets seamlessly. Designed as a
+                            reservation platform demonstration project.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/shahariarshopnil/Railway-E-ticket" target="_blank"
+                                class="btn-project"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express.js</span>
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                        </div>
+                        <h3>GigStream - Freelancing Gig</h3>
+                        <p>A job-board application where employers post available gigs and employees browse, search, and
+                            apply for opportunities matching their profiles.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/shahariarshopnil/GigStream-A-freelancing-Gig.git"
+                                target="_blank" class="btn-project"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MERN Stack</span>
+                        </div>
+                        <h3>Event Management System</h3>
+                        <p>A comprehensive platform enabling users to book tickets for various events, organize
+                            conferences/meetups, and discover upcoming local events.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/shahariarshopnil/Event-Management-System" target="_blank"
+                                class="btn-project"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-info">
+                        <div class="project-tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <h3>Car Workshop Appointment</h3>
+                        <p>A booking system that allows users to schedule vehicle service appointments and choose
+                            mechanics through a streamlined web platform.</p>
+                        <div class="project-links">
+                            <a href="https://github.com/shahariarshopnil/Car-Workshop-Appointment" target="_blank"
+                                class="btn-project"><i class="fa-brands fa-github"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Academic Mini Projects -->
+            <div class="other-projects-wrapper">
+                <h3>Other Projects &amp; Demos</h3>
+                <div class="other-projects-grid">
+                    <a href="https://shahariarshopnil.github.io/Fortune-Generator/" target="_blank"
+                        class="other-project-link">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        <span>Fortune Generator</span>
+                    </a>
+                    <a href="https://shahariarshopnil.github.io/Stopwatch/" target="_blank" class="other-project-link">
+                        <i class="fa-solid fa-stopwatch"></i>
+                        <span>Stopwatch</span>
+                    </a>
+                    <a href="https://shahariarshopnil.github.io/To-Do-List/" target="_blank" class="other-project-link">
+                        <i class="fa-solid fa-list-check"></i>
+                        <span>To-Do List</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="section">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Research &amp; Publications</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="research-card">
+                <div class="research-icon">
+                    <i class="fa-solid fa-file-invoice-dollar"></i>
+                </div>
+                <div class="research-content">
+                    <span class="conf-badge"><i class="fa-solid fa-globe"></i> IEEE ICCIT 2023</span>
+                    <h3>Unique Approach of Contextual Uniqueness Assessment of Research Papers Using Multi-Label
+                        Classification and Similarity Detection</h3>
+                    <p class="authors"><strong>Authors:</strong> S. Tanvir, M. Z. Islam, S. Moon Taher, S. A. Muztahid,
+                        A. Biswas and <strong>M. S. Shopnil</strong></p>
+                    <p class="description">
+                        This paper outlines an innovative system for analyzing research paper metadata and content
+                        uniqueness. By integrating multi-label text classification models and custom similarity
+                        detection, it assesses the thematic and context originality of submissions to support peer
+                        reviews.
+                    </p>
+                    <div class="research-action">
+                        <a href="https://doi.org/10.1109/ICCIT60459.2023.10441521" target="_blank"
+                            class="btn btn-primary"><i class="fa-solid fa-circle-nodes"></i> Read Publication (DOI)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Connect -->
+    <section id="contact" class="section">
+        <div class="container section-container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-details">
+                    <h3>Contact Information</h3>
+                    <p>Feel free to reach out to me for project discussions, collaborations, research opportunities, or
+                        technical roles!</p>
+
+                    <div class="contact-info-list">
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <div>
+                                <span>Address</span>
+                                <p>KHA-51/C, Khilkhet, Dhaka, Bangladesh</p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                            <div>
+                                <span>Email</span>
+                                <p><a
+                                        href="mailto:md.shahariar.shopnil@g.bracu.ac.bd">md.shahariar.shopnil@g.bracu.ac.bd</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-info-item">
+                            <i class="fa-solid fa-mobile-screen-button"></i>
+                            <div>
+                                <span>Phone</span>
+                                <p><a href="tel:+8801306625211">(+880) 1306625211</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-card-glass">
+                    <h3>Connect Digitally</h3>
+                    <p>Reach out to me directly on social profiles or join my communities:</p>
+
+                    <div class="digital-platforms">
+                        <a href="https://www.linkedin.com/in/shahariar-shopnil-620444222/" target="_blank"
+                            class="platform-link linkedin">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/shahariarshopnil" target="_blank" class="platform-link github">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub Developer Profile</span>
+                        </a>
+                        <a href="https://discord.gg/egDGpMA3" target="_blank" class="platform-link discord">
+                            <i class="fa-brands fa-discord"></i>
+                            <span>Discord Server</span>
+                        </a>
+                        <a href="https://www.facebook.com/shahariar.shopnil.143/" target="_blank"
+                            class="platform-link facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                            <span>Facebook Profile</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <p>&copy; 2026 Md. Shahariar Shopnil. All rights reserved.</p>
+
+            <!-- Bottom Section (Required by JS) -->
+            <div id="bottom-info"></div>
+        </div>
+    </footer>
+
+    <!-- JavaScript  -->
+    <!-- JavaScript  -->
+    <script>
+        // Tab switcher function
+        function opentab(tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            for (var tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (var tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        // Mobile Navigation Toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-xmark');
+            } else {
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        document.querySelectorAll('#nav-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-xmark');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Display location and last modified date
+        function displayBottomInfo() {
+            const bottomInfo = document.getElementById('bottom-info');
+            const pageLocation = window.location.href;
+            const lastModified = new Date(document.lastModified).toLocaleDateString();
+
+            bottomInfo.innerHTML = `
+                <p><i class="fa-solid fa-location-arrow"></i> Location: ${pageLocation}</p>
+                <p><i class="fa-solid fa-clock"></i> Last Modified: ${lastModified}</p>
+            `;
+        }
+
+        window.onload = displayBottomInfo;
+
+        // ==========================================
+        // STANDARD DENSITY CONSTELLATION NETWORK
+        // ==========================================
+        (function () {
+            const canvas = document.getElementById('hero-canvas');
+            if (!canvas) return;
+            const ctx = canvas.getContext('2d');
+            let particles = [];
+            
+            // Configured to match the exact spacing of the reference screenshot
+            const config = {
+                particleColor: 'rgba(101, 209, 252, 0.9)', // Bright sky-blue dots (#65d1fc)
+                lineColorRGB: '101, 209, 252',             // Sky-blue connecting lines
+                connectionDistance: 190,                   // Longer reach to form distinct triangles
+                maxOpacity: 0.35,                          // Clean, subtle line visibility
+                moveSpeed: 0.35,                           // Slow, majestic drifting
+                mouseRadius: 200                           // Cursor interaction radius
+            };
+
+            let mouse = { x: null, y: null, radius: config.mouseRadius };
+
+            function resizeCanvas() {
+                const header = document.getElementById('header');
+                if (!header) return;
+                canvas.width = header.clientWidth;
+                canvas.height = header.clientHeight;
+            }
+
+            window.addEventListener('resize', resizeCanvas);
+            resizeCanvas();
+
+            const headerSec = document.getElementById('header');
+            if (headerSec) {
+                headerSec.addEventListener('mousemove', (e) => {
+                    const rect = headerSec.getBoundingClientRect();
+                    mouse.x = e.clientX - rect.left;
+                    mouse.y = e.clientY - rect.top;
+                });
+
+                headerSec.addEventListener('mouseleave', () => {
+                    mouse.x = null;
+                    mouse.y = null;
+                });
+            }
+
+            class Particle {
+                constructor() {
+                    this.x = Math.random() * canvas.width;
+                    this.y = Math.random() * canvas.height;
+                    this.vx = (Math.random() - 0.5) * config.moveSpeed;
+                    this.vy = (Math.random() - 0.5) * config.moveSpeed;
+                    this.radius = Math.random() * 1.5 + 1.5; // Distinct, clean nodes
+                }
+
+                update() {
+                    this.x += this.vx;
+                    this.y += this.vy;
+
+                    if (this.x < 0 || this.x > canvas.width) this.vx = -this.vx;
+                    if (this.y < 0 || this.y > canvas.height) this.vy = -this.vy;
+
+                    if (mouse.x !== null && mouse.y !== null) {
+                        let dx = this.x - mouse.x;
+                        let dy = this.y - mouse.y;
+                        let distance = Math.sqrt(dx * dx + dy * dy);
+                        if (distance < mouse.radius) {
+                            let force = (mouse.radius - distance) / mouse.radius;
+                            let angle = Math.atan2(dy, dx);
+                            this.x += Math.cos(angle) * force * 1.0;
+                            this.y += Math.sin(angle) * force * 1.0;
+                        }
+                    }
+                }
+
+                draw() {
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+                    ctx.fillStyle = config.particleColor;
+                    ctx.fill();
+                }
+            }
+            
+            function init() {
+                particles = [];
+                // LOWERED DENSITY: Caps at 45 nodes for that clean, spacious standard look
+                const numberOfParticles = Math.min(45, Math.floor((canvas.width * canvas.height) / 22000));
+                for (let i = 0; i < numberOfParticles; i++) {
+                    particles.push(new Particle());
+                }
+            }
+
+            function animate() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                for (let i = 0; i < particles.length; i++) {
+                    particles[i].update();
+                    particles[i].draw();
+                }
+
+                for (let i = 0; i < particles.length; i++) {
+                    for (let j = i + 1; j < particles.length; j++) {
+                        let dx = particles[i].x - particles[j].x;
+                        let dy = particles[i].y - particles[j].y;
+                        let distance = Math.sqrt(dx * dx + dy * dy);
+
+                        if (distance < config.connectionDistance) {
+                            let opacity = (1 - (distance / config.connectionDistance)) * config.maxOpacity;
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = `rgba(${config.lineColorRGB}, ${opacity})`;
+                            ctx.lineWidth = 1;
+                            ctx.stroke();
+                        }
+                    }
+
+                    if (mouse.x !== null && mouse.y !== null) {
+                        let dx = particles[i].x - mouse.x;
+                        let dy = particles[i].y - mouse.y;
+                        let distance = Math.sqrt(dx * dx + dy * dy);
+                        if (distance < mouse.radius) {
+                            let opacity = (1 - (distance / mouse.radius)) * (config.maxOpacity + 0.15);
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(mouse.x, mouse.y);
+                            ctx.strokeStyle = `rgba(${config.lineColorRGB}, ${opacity})`;
+                            ctx.lineWidth = 1.2;
+                            ctx.stroke();
+                        }
+                    }
+                }
+
+                requestAnimationFrame(animate);
+            }
+
+            init();
+            animate();
+
+            window.addEventListener('resize', () => {
+                init();
+            });
+        })();
+    </script>
